@@ -35,7 +35,8 @@ if(personne.age > 18 && personne.vola == 3000){
 const bouton = document.getElementById('bouton')
 let inputPays = document.getElementById('pays')
 let inputAge = document.getElementById('age')
-bouton.addEventListener('click', function(){
+bouton.addEventListener('click', function(e){
+    e.preventDefault();
     // USA Mada
     let pays = inputPays.value 
     let age = inputAge.value
